@@ -12,7 +12,10 @@ public class PrimeNumbers1 {
             //Logic:    as we know a number can be divided only by the numbers less than it root.
             //for ex. 16 can only be divided by either 4 or the number less than 4.
             // 4*4=16, 8*2 = 16(Here 2 is less than 4).
-            if(n%i == 0){    
+            if(n%i == 0){
+                System.out.println(n + " is divisible by " + i);
+                int div = n / i;
+                System.out.println(div + " X " + i + " = " + n);    
             isPrime = false;
             break;
             }
